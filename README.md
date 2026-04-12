@@ -11,7 +11,7 @@ Bloom & Co. is a modern frontend showcase that simulates a high-end shopping exp
 ![Bloom & Co Home](./public/bloom1.png)
 *Landing page with elegant typography and clean layout.*
 
-![Bloom & Co Catalog](./public/bloom2.jpg)
+![Bloom & Co Catalog](./public/bloom2.png)
 *Product catalog showcasing premium floral arrangements.*
 
 ## 🚀 Tech Stack
