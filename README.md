@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌸 Bloom & Co. | Premium Floral E-Commerce
 
-## Getting Started
+A bespoke e-commerce web application designed for a premium floral boutique. This project focuses on delivering a seamless, elegant, and highly interactive user experience with fluid animations and efficient global state management.
 
-First, run the development server:
+## 📖 Overview
+Bloom & Co. is a modern frontend showcase that simulates a high-end shopping experience. It features a dynamic product catalog, a fluid shopping cart drawer, and interactive product detail pages. The architecture highlights modern React patterns, prioritizing fast rendering and maintainable state management without prop-drilling.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📸 Sneak Peek
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Bloom & Co Home](./bloom1.png)
+*Landing page with elegant typography and clean layout.*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Bloom & Co Catalog](./bloom2.jpg)
+*Product catalog showcasing premium floral arrangements.*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Tech Stack
+* **Framework:** Next.js (App Router) & React
+* **Styling:** Tailwind CSS
+* **State Management:** Zustand (for global Cart state)
+* **Animation Engine:** Framer Motion
+* **Icons:** Lucide React
 
-## Learn More
+## ✨ Key Features
+* **Global Cart State:** Implemented lightweight and fast state management using Zustand to handle adding, removing, and calculating cart totals across different components without unnecessary re-renders.
+* **Fluid UI/UX:** Integrated Framer Motion for smooth page transitions, stagger effects, and an interactive slide-out cart drawer.
+* **Dynamic Routing:** Utilized Next.js dynamic routes (`page.tsx` with params) for scalable product detail pages.
+* **Responsive Design:** Fully adaptive layout ensuring an elegant experience across mobile, tablet, and desktop viewports.
 
-To learn more about Next.js, take a look at the following resources:
+## 💻 How to Run Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/yourusername/bloom-and-co.git](https://github.com/yourusername/bloom-and-co.git)
+   cd bloom-and-co
+   npm install
+    # or
+    yarn install
+    npm run dev
+    # or    
+    yarn dev
