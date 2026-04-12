@@ -7,6 +7,7 @@ Bloom & Co. is a modern frontend showcase that simulates a high-end shopping exp
 
 ## 📸 Sneak Peek
 
+
 ![Bloom & Co Home](./bloom1.png)
 *Landing page with elegant typography and clean layout.*
 
@@ -36,5 +37,5 @@ Bloom & Co. is a modern frontend showcase that simulates a high-end shopping exp
     # or
     yarn install
     npm run dev
-    # or    
+    # or
     yarn dev
