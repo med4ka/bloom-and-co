@@ -40,7 +40,7 @@ The underlying architecture highlights clean, contemporary React patterns, prior
 ### 2. Premium Product Catalog
 *Interactive grid layout showcasing premium floral arrangements with active state filtration systems.*
 <p align="center">
-  <img src="public/bloom2.jpg" width="90%" alt="Bloom & Co Catalog Layout"/>
+  <img src="public/bloom2.png" width="90%" alt="Bloom & Co Catalog Layout"/>
 </p>
 
 ---
