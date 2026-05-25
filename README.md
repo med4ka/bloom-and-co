@@ -12,7 +12,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 **Bloom & Co.** is a modern, premium frontend showcase engineered to simulate a high-end luxury shopping experience. The application features a dynamic, image-heavy product catalog, an immersive slide-out shopping cart drawer, and fluidly animated product detail pages[cite: 6]. 
 
@@ -20,12 +20,12 @@ The underlying architecture highlights clean, contemporary React patterns, prior
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-* ⚡ **Global Cart State:** Implemented lightweight and highly optimized state management using Zustand to handle global cart dispatches (adding, removing, and live total calculations) across isolated components without unnecessary tree re-renders[cite: 6].
-* 🌊 **Fluid UI/UX Architecture:** Integrated Framer Motion to drive sophisticated hardware-accelerated page transitions, staggered layout animations, and a highly responsive cart interface[cite: 6].
-* 🔀 **Dynamic Routing Infrastructure:** Deployed Next.js dynamic routing structures (`page.tsx` utilizing layout params) to generate robust, scalable, and SEO-friendly product detail paths[cite: 6].
-* 📱 **Responsive Luxury Design:** A fully adaptive web interface crafted with Tailwind CSS to maintain structural elegance across mobile, tablet, and ultra-wide desktop viewports[cite: 6].
+*  **Global Cart State:** Implemented lightweight and highly optimized state management using Zustand to handle global cart dispatches (adding, removing, and live total calculations) across isolated components without unnecessary tree re-renders[cite: 6].
+*  **Fluid UI/UX Architecture:** Integrated Framer Motion to drive sophisticated hardware-accelerated page transitions, staggered layout animations, and a highly responsive cart interface[cite: 6].
+*  **Dynamic Routing Infrastructure:** Deployed Next.js dynamic routing structures (`page.tsx` utilizing layout params) to generate robust, scalable, and SEO-friendly product detail paths[cite: 6].
+*  **Responsive Luxury Design:** A fully adaptive web interface crafted with Tailwind CSS to maintain structural elegance across mobile, tablet, and ultra-wide desktop viewports[cite: 6].
 
 ---
 
@@ -45,7 +45,7 @@ The underlying architecture highlights clean, contemporary React patterns, prior
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Framework:** Next.js (App Router Architecture) & React[cite: 6]
 * **Styling:** Tailwind CSS (Utility-first bespoke layout tokens)[cite: 6]
@@ -55,7 +55,7 @@ The underlying architecture highlights clean, contemporary React patterns, prior
 
 ---
 
-## 🚀 Local Development Setup
+## Local Development Setup
 
 Follow these protocols to clone and initialize the production environment instance locally[cite: 6]:
 
