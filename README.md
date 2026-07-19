@@ -1,69 +1,86 @@
-<h1 align="center">🌸 Bloom & Co.</h1>
+# Bloom & Co.
+
+**A premium e-commerce frontend for a floral boutique — built to explore fluid, animation-heavy UI patterns without sacrificing state management cleanliness.**
+
+This is a frontend showcase project: a full storefront experience (product catalog, cart drawer, product detail pages) with an emphasis on smooth, hardware-accelerated transitions and a cart state architecture that doesn't rely on prop-drilling.
+
+---
+
+## Why This Exists
+
+Most e-commerce demo projects either skip animation entirely (functional but flat) or bolt on animations that cause layout jank and re-render storms. Bloom & Co. was built to answer a specific question: how do you keep a cart drawer, live totals, and page transitions all animated smoothly, while keeping state management simple enough that adding a new page doesn't require threading props through five components?
+
+The answer here is a small, centralized Zustand store for cart state, paired with Framer Motion for transitions — no Redux, no Context provider nesting, no prop drilling.
+
+## Features
+
+- **Product catalog** — image-heavy grid layout with category filtering
+- **Cart drawer** — slide-out panel with live quantity/total updates, powered by a global Zustand store (add/remove/update triggers re-renders only in the components that actually display cart data, not the whole tree)
+- **Product detail pages** — dynamic routes (`app/products/[slug]/page.tsx`) with animated image transitions between the catalog and detail view
+- **Page transitions** — Framer Motion-driven fade/slide transitions between routes
+- **Fully responsive** — Tailwind CSS layout tested across mobile, tablet, and desktop breakpoints
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js (App Router) |
+| Styling | Tailwind CSS |
+| State Management | Zustand |
+| Animation | Framer Motion |
+| Icons | Lucide React |
+
+## Screenshots
+
+### Landing Page
 <p align="center">
-  <i>Bespoke e-commerce web application designed for a premium floral boutique. Delivering a seamless, elegant, and highly interactive user experience with fluid animations.</i>
+  <img src="public/bloom1.png" width="90%" alt="Bloom & Co homepage"/>
 </p>
 
+### Product Catalog
 <p align="center">
-  <img src="https://img.shields.io/badge/Framework-Next.js_14-black?style=for-the-badge&logo=next.js" />
-  <img src="https://img.shields.io/badge/Styling-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css" />
-  <img src="https://img.shields.io/badge/State_Management-Zustand-764ABC?style=for-the-badge&logo=react" />
-  <img src="https://img.shields.io/badge/Animations-Framer_Motion-E95420?style=for-the-badge&logo=framer" />
+  <img src="public/bloom2.png" width="90%" alt="Bloom & Co catalog view"/>
 </p>
 
----
+## Getting Started
 
-##  Overview
+### Prerequisites
+- Node.js 18+
 
-**Bloom & Co.** is a modern, premium frontend showcase engineered to simulate a high-end luxury shopping experience. The application features a dynamic, image-heavy product catalog, an immersive slide-out shopping cart drawer, and fluidly animated product detail pages[cite: 6]. 
+### Setup
 
-The underlying architecture highlights clean, contemporary React patterns, prioritizing lightning-fast layout rendering and scale-ready global state management without the computational overhead of prop-drilling[cite: 6].
+```bash
+git clone https://github.com/med4ka/bloom-and-co.git
+cd bloom-and-co
+npm install
+npm run dev
+```
 
----
+Visit `http://localhost:3000`.
 
-##  Key Features
+## Project Structure
 
-*  **Global Cart State:** Implemented lightweight and highly optimized state management using Zustand to handle global cart dispatches (adding, removing, and live total calculations) across isolated components without unnecessary tree re-renders[cite: 6].
-*  **Fluid UI/UX Architecture:** Integrated Framer Motion to drive sophisticated hardware-accelerated page transitions, staggered layout animations, and a highly responsive cart interface[cite: 6].
-*  **Dynamic Routing Infrastructure:** Deployed Next.js dynamic routing structures (`page.tsx` utilizing layout params) to generate robust, scalable, and SEO-friendly product detail paths[cite: 6].
-*  **Responsive Luxury Design:** A fully adaptive web interface crafted with Tailwind CSS to maintain structural elegance across mobile, tablet, and ultra-wide desktop viewports[cite: 6].
+```
+bloom-and-co/
+├── app/
+│   ├── page.tsx              # Landing page
+│   ├── products/
+│   │   ├── page.tsx           # Catalog
+│   │   └── [slug]/page.tsx    # Product detail (dynamic route)
+│   └── layout.tsx
+├── components/
+│   ├── cart-drawer.tsx
+│   ├── product-card.tsx
+│   └── ...
+├── store/
+│   └── cart-store.ts          # Zustand cart state
+└── public/
+```
 
----
+## Known Limitations
 
-## 📸 Studio Showroom
-
-### 1. Luxury Landing Page
-*Immersive entry viewport featuring elegant typography, minimalist composition, and high-end branding.*
-<p align="center">
-  <img src="public/bloom1.png" width="90%" alt="Bloom & Co Home Layout"/>
-</p>
-
-### 2. Premium Product Catalog
-*Interactive grid layout showcasing premium floral arrangements with active state filtration systems.*
-<p align="center">
-  <img src="public/bloom2.png" width="90%" alt="Bloom & Co Catalog Layout"/>
-</p>
-
----
-
-##  Tech Stack
-
-* **Framework:** Next.js (App Router Architecture) & React[cite: 6]
-* **Styling:** Tailwind CSS (Utility-first bespoke layout tokens)[cite: 6]
-* **State Management:** Zustand (Global cart engine)[cite: 6]
-* **Animation Engine:** Framer Motion[cite: 6]
-* **Icons:** Lucide React[cite: 6]
+This is a frontend-only showcase — there's no backend, no real checkout/payment flow, and product data is static rather than fetched from a CMS or database. It's built to demonstrate UI/animation/state-management patterns, not to run an actual store.
 
 ---
 
-## Local Development Setup
-
-Follow these protocols to clone and initialize the production environment instance locally[cite: 6]:
-
-### 1. Environment Setup & Dependency Installation
-
-* git clone [https://github.com/med4ka/bloom-and-co.git](https://github.com/med4ka/bloom-and-co.git)
-* cd bloom-and-co
-* npm install
-
-### 2. Execute Production Server
-* npm run dev
+*Built with Next.js, Tailwind CSS, and Framer Motion.*
